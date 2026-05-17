@@ -12,6 +12,6 @@ public:
         int jump = arr[start];
         arr[start] = -arr[start]; 
         
-        return canReach(arr, start + jump) || canReach(arr, start - jump);
+        return canReach(arr, start + jump) || canReach(arr, start - jump); // recursive graph search applied as time was exceeding , need to learn dfs bfs
     }
 };
